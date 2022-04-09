@@ -131,12 +131,13 @@ LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'home'
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
-EMAIL_USE_TLS = True
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_HOST_USER = 'aizhan.bexatova@gmail.com'
-EMAIL_HOST_PASSWORD = 'L8u1%ySAlpXa'
-DEFAULT_FROM_EMAIL = 'Aizhan'
-DEFAULT_TO_EMAIL = 'aizhan.bexatova@gmail.com'
+DEFAULT_FROM_EMAIL = 'ulistonee@gmail.com'
+DEFAULT_TO_EMAIL = 'ulistonee@gmail.com'
 
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.sendgrid.net'
+EMAIL_HOST_USER = 'apikey'
+EMAIL_HOST_PASSWORD = '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'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+
